@@ -38,8 +38,8 @@
             <source src="/assets/vid/3129540-uhd_3840_2160_30fps.mp4" type="video/mp4">
         </video>
         <header class="bg-transparent w-full h-auto z-40">
-            <nav class="w-full h-24 flex flex-col md:flex-row justify-around items-center flex-wrap">
-                <div class="flex gap-2">
+            <nav class="w-full h-36 md:h-24 flex flex-col md:flex-row justify-around items-center flex-wrap">
+                <div class="flex gap-2 mt-10 md:mt-0">
                     <h1 class="text-3xl text-zinc-50 font-semibold text-center">Potencial <h1 class="text-3xl text-orange-500 font-semibold " >Sem Limites</h1>
                 </div>
                 <div>
@@ -51,8 +51,8 @@
                     </ul>
                 </div>
                 <div class=" flex gap-4">
-                    <button id="signIn" class="bg-zinc-50 text-lg text-zinc-950 transition all hover:bg-orange-500 hover:text-white font-bold py-1 px-14 rounded-s-sm">Entrar</button>
-                    <button id="logOut" class="bg-transparent border-2 border-orange-500 text-lg text-zinc-50 transition all  hover:bg-orange-500 hover:text-white font-bold py-1 px-14 rounded-s-sm">Mais</button>
+                    <button id="signIn" class="bg-zinc-50 text-lg text-zinc-950 transition all hover:bg-orange-500  hover:border-2 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-400 hover:text-amber-50 font-bold py-1 px-14 rounded-s-sm">Entrar</button>
+                    <button id="logOut" class="bg-transparent border-2 border-orange-500 text-lg text-zinc-50 transition all  hover:bg-orange-500 hover:shadow-2xl hover:shadow-orange-400 hover:text-white font-bold py-1 px-14 rounded-s-sm">Mais</button>
                 </div>
             </nav>
         </header>
@@ -62,22 +62,22 @@
                 <h2 class="text-5xl text-orange-500 font-semibold text-center mb-4 md:text-7xl md:mb-6">O Seu Potencial - Sem Limites</h2>
                 <p class="text-lg text-zinc-50 font-medium text-center mb-4 md:text-3xl md:mb-8">Ajudando homens há reconstruirem a sua autoestima e autoconfiança.</p>
                 <div data-aos="fade-up">
-                    <button class="bg-orange-500 text-white text-lg font-bold py-2 px-14 rounded-s-sm transition all hover:bg-transparent hover:border-2 hover:border-orange-500"><a href="https://www.instagram.com/aprenda_seu_potencial/">Conhecer</a></button>
+                    <button id="nextIn" class="bg-orange-500 text-white text-lg font-bold py-2 px-14 rounded-s-sm transition all hover:bg-zinc-50 hover:border-2 hover:border-zinc-50 hover:shadow-2xl hover:shadow-neutral-50 hover:text-neutral-950">Conhecer</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!--Seção About-->
-    <section class="bg-black w-full h-full">
-        <div id="about" class="flex flex-col justify-around items-center bg-transparent h-full w-full px-4"> 
+    <section class="bg-black w-full h-full px-10 md:px-24">
+        <div id="about" class="flex flex-col justify-around items-center bg-transparent h-full w-full"> 
             <div class="mb-20">
                 <div data-aos="fade-up">
                     <h2 class="text-4xl md:text-6xl text-orange-500 font-semibold">Quem Somos Nós?</h2>
                 </div>
             </div>
             <div class="flex flex-col md:flex-row w-full">
-                <div class="w-full h-auto flex flex-col justify-center px-2">
+                <div class="w-full h-auto grid grid-cols-1 grid-rows-5 gap-6 md:grid-cols-2 ">
                     <div data-aos="fade-up-left" class="flex flex-col mb-2 md:mb-10">
                         <h3 class="text-4xl text-orange-500 mb-2 ">1 .</h3>
                         <p class="text-lg md:text-2xl text-zinc-50 font-sans mb-1 md:w-2xl ">Somos uma equipe de psicológos, pesquisadores e empresários com experiência em empreendorismo e desenvolvimento pessoal. Estamos aqui para te ajudar a construir a sua autoestima e autoconfiança.</p>
@@ -107,15 +107,15 @@
     </section>
 
     <!--Seção de Método-->
-    <section class="bg-black w-full h-full">
-        <div id="method" class="flex flex-col justify-around items-center bg-transparent h-full w-full px-4">
+    <section class="bg-black w-full h-full px-10 md:px-24">
+        <div id="method" class="flex flex-col justify-around items-center bg-transparent h-full w-full ">
             <div class="mb-20 mt-20">
                 <div data-aos="fade-up">
                     <h2 class="text-4xl md:text-6xl text-orange-500 font-semibold">Como Funcionamos?</h2>
                 </div>
             </div>
             <div class="flex flex-col md:flex-row w-full">
-                <div class="w-full h-auto flex flex-col justify-center px-2">
+                <div class="w-full h-auto grid grid-cols-1 grid-rows-5 gap-6 md:grid-cols-2 ">
                     <div data-aos="fade-up-right" class="flex flex-col mb-2 md:mb-10">
                         <h3 class="text-4xl text-orange-500 mb-2">1 .</h3>
                         <p class="text-lg md:text-2xl text-zinc-50 font-sans mb-1">Utilizamos metodologias de Psicologia e Empreendedorismo para identificar as melhores formas de te ajudar a se tornar um Sem Limites.</p>
@@ -143,15 +143,15 @@
 
     
     <!--Seção de Diferencial-->
-    <section class="bg-black w-full h-full">
-        <div id="home" class="flex flex-col justify-around items-center bg-transparent h-full w-full px-4">
+    <section id="section" class="bg-black w-full h-full px-10 md:px-24">
+        <div id="home" class="flex flex-col justify-around items-center bg-transparent h-full w-full">
             <div class="mb-20 mt-20">
                 <div data-aos="fade-up">
-                    <h2 class="text-4xl md:text-6xl text-orange-500 font-semibold">Porque Nós Somos Diferentes?</h2>
+                    <h2 class="text-4xl text-center md:text-6xl text-orange-500 font-semibold">Porque Nós Somos Diferentes?</h2>
                 </div>
             </div>
             <div class="flex flex-col md:flex-row w-full">
-                <div data-aos="zoom-in" class="w-full h-auto flex flex-col justify-center px-2">
+                <div data-aos="zoom-in" class="w-full h-auto grid grid-cols-1 grid-rows-5 gap-6 md:grid-cols-2 ">
                     <div data-aos="fade-up-right" class="flex flex-col mb-2 md:mb-10">
                         <h3 class="text-4xl text-orange-500 mb-2">1 .</h3>
                         <p class="text-lg md:text-2xl text-zinc-50 font-sans mb-1">Reininico Emocional Superando Traumas e Relações Tóxicas - essa é a trascrição do nosso método - reforçanado ainda mais o nosso compromisso com voce durante toda a sua caminhada</p>
@@ -170,7 +170,7 @@
     </section>
 
     <!--Seção de Contato-->
-    <section class="bg-black w-full h-full">
+    <section class="bg-black w-full h-full px-10 md:px-24">
         <div id="contact" class="flex flex-col justify-around items-center bg-transparent h-full w-full px-4 py-12">
             <div class="mb-20 mt-20">
                 <div data-aos="fade-up">
@@ -178,27 +178,29 @@
                 </div>
             </div>
             <div data-aos="fade-up" class="flex flex-col md:flex-row w-full">
-                <div class="w-full h-auto flex flex-col md:flex-row justify-around px-2">
-                    <div class="w-full">
+                <div class="w-full h-auto flex flex-col md:flex-row md:justify-around gap-4">
+                    <div class="w-full grid grid-cols-1 grid-rows-4 md:grid-cols-2">
                         <div data-aos="fade-up-right" class="flex flex-col mb-2 md:mb-10">
                             <h3 class="text-4xl text-orange-500 mb-2">1 .</h3>
-                            <p class="text-lg md:text-2xl text-zinc-50 font-sans mb-1">Entre em contato conosco através do formulário abaixo:</p>
+                            <p class="text-lg md:text-xl text-zinc-50 font-sans mb-1">Entre em contato conosco através do formulário abaixo:</p>
+                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em por WhatsApp, Instragam, Facebook e Telegram.</p>
+                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos parceiros por meio do forumlário.</p>
                         </div>
                         <div  data-aos="fade-up-left" class="flex flex-col mb-2 md:mb-10">
                             <h3 class="text-3xl text-orange-500 mb-2">2 . </h3>
-                            <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">Entre em contato com nossos representantes pelo telefone: (91) 99396-1874</p>
-                            <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">Entre em contato com nossos representantes pelo e-mail:  <a href="mailto:contato@example.com" class="text-orange-500 hover:text-orange-800">pot3ncialsemlimites@gmail.com</a></p>
-                            <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">Entre em contato com nossos representantes pelo WhatsApp: (91) 993936-1874</p>
+                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo telefone: (91) 99396-1874</p>
+                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo e-mail:  <a href="mailto:pot3ncialsemlimites@gmail.com" class="text-orange-500 hover:text-orange-800">pot3ncialsemlimites@gmail.com</a></p>
+                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo WhatsApp: (91) 993936-1874</p>
                         </div>
                         <div  data-aos="fade-up-left" class="flex flex-col mb-2 md:mb-10">
                             <h3 class="text-3xl text-orange-500 mb-2">3 .</h3>
-                            <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">Entre em contato com nossos representantes pelo Facebook: <a href="https://www.facebook.com/examplecompany" class="text-orange-500 hover:text-orange-800">Facebook</a></p>
-                            <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">Entre em contato com nossos representantes pelo Telegram: <a href="https://www.instagram.com/examplecompany" class="text-orange-500 hover:text-orange-800">Instagram</a></p>
-                            <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">Entre em contato com nossos representantes pelo Instagram: <a href="https://www.instagram.com/examplecompany" class="text-orange-500 hover:text-orange-800">Instagram</a></p>
+                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo Facebook: <a href="https://www.facebook.com/examplecompany" class="text-orange-500 hover:text-orange-800">Facebook</a></p>
+                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo Telegram: <a href="https://www.instagram.com/examplecompany" class="text-orange-500 hover:text-orange-800">Instagram</a></p>
+                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo Instagram: <a href="https://www.instagram.com/examplecompany" class="text-orange-500 hover:text-orange-800">Instagram</a></p>
                         </div>
                     </div>
                     <div class="w-full">
-                        <form class="w-full h-auto md:h-[500px] flex flex-col justify-center p-8  rounded-xl" action="/submit" method="post">
+                        <form class="w-full h-auto md:h-[500px] flex flex-col bg-neutral-950/65 justify-center p-8  rounded-xl" action="/submit" method="post">
                             <div data-aos="zoom-in" class="relative mb-10">
                               <input type="text" name="name" id="name" placeholder=" " class="peer block w-full text-orange-500 appearance-none bg-transparent border border-gray-300 rounded-md px-3 pt-6 pb-2 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 sm:text-sm" required>
                               <label for="name" class="absolute left-3 top-2 text-orange-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-sm peer-focus:text-orange-500">Nome</label>
@@ -212,6 +214,9 @@
                             <div data-aos="zoom-in-up" class="relative mb-10">
                               <textarea name="message" id="message" placeholder=" " class="peer block w-full  text-orange-500  appearance-none bg-transparent border border-gray-300 rounded-md px-3 pt-8 pb-2 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 sm:text-sm" required></textarea>
                               <label for="message" class="absolute left-3 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-sm peer-focus:text-orange-500">Mensagem</label>
+                            </div>
+                            <div data-aos="fade-up" class="flex justify-center items-center w-full h-auto">
+                                <button type="submit" class="px-10 py-2 rounded-sm text-xl text-white bg-transparent border-2 border-orange-500 transition-all hover:bg-orange-500">Enviar</button>
                             </div>
                         </form>     
                     </div>
@@ -244,5 +249,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="script.js"></script>
+    <script src="/backend/formProcess.js"></script>
 </body>
 </html>
