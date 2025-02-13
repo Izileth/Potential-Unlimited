@@ -1,3 +1,4 @@
+
 // Capturar o formulário e o botão de envio
 const form = document.querySelector('form');
 
