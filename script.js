@@ -1,45 +1,41 @@
-
-const signInBtn = document.getElementById('signIn');
-
-signInBtn.addEventListener('click', () => {
-    window.open("https://tailwindcss.com/docs/place-content");
-
-    event.preventDefault(); // Prevent the page from refreshing when the button is clicked.
-
-    signInBtn.disabled = true; // Disable the button while the new tab is loading.
-
-    setTimeout(() => {
-        signInBtn.disabled = false; // Re-enable the button after 5 seconds.
-    }, 5000); // 5 seconds delay before re-enabling the button.
+// Scroll Progress Indicator
+const scrollProgress = document.getElementById("scrollProgress");
+window.addEventListener("scroll", () => {
+    const scrollTop =
+        document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+    const progress = (scrollTop / scrollHeight) * 100;
+    scrollProgress.style.width = progress + "%";
 });
 
-const logOutBtn = document.getElementById('logOut');
 
-logOutBtn.addEventListener('click', () => {
-    window.open('https://www.tiktok.com/@potencial_marco_zero');
 
-    event.preventDefault(); // Prevent the page from refreshing when the button is clicked.
+// Header Scroll Effect
+const header = document.getElementById("header");
+let lastScroll = 0;
 
-    logOutBtn.disabled = true; // Disable the button while the new tab is loading.
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
 
-    setTimeout(() => {
-        signInBtn.disabled = false; // Re-enable the button after 5 seconds.
-    }, 5000); // 5 seconds delay before re-enabling the button.
+  if (currentScroll <= 0) {
+    header.classList.remove("glass-effect");
+    header.classList.add("glass-effect");
+    return;
+  }
+
+  if (currentScroll > lastScroll && currentScroll > 100) {
+    // Scroll Down
+    header.classList.remove("glass-effect");
+  } else {
+    // Scroll Up
+    header.classList.add("glass-effect");
+  }
+
+  lastScroll = currentScroll;
 });
 
-const nextInBtn = document.getElementById('nextIn');
 
+// Redirect Button 
 
-nextInBtn.addEventListener('click', () => {
-    // Seleciona o elemento pelo ID
-    const destino = document.getElementById("section");
-    
-    // Scroll suave até o elemento
-    destino.scrollIntoView({ behavior: "smooth" });
-
-    nextInBtn.disabled = true; // Disable the button while the new tab is loading.
-
-    setTimeout(() => {
-        signInBtn.disabled = false; // Re-enable the button after 5 seconds.
-    }, 2500); // 2.5 seconds delay before re-enabling the button.
-});

@@ -1,263 +1,867 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-    <!--Meta Tags-->
-
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Potential Unlimited - Your Potential - Unlimited">
-    <meta property="og:description" content="Discover potential of your mind and you body.">
-    <meta property="og:url" content="https://www.unlimited.com">
-    <meta property="og:image" content="https://www.unlimited.com/assets/img/logo.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Potential Unlimited - Your Potential - Unlimited">
-    <meta name="twitter:description" content="Discover potential of your mind and you body.">
-    <meta name="twitter:image" content="https://www.cadapio.com/assets/img/logo.png">
-    <meta name="description" content="Discover potential of your mind and you body.">
-    <meta name="theme-color" content="#000000">
-
-    <!--Icon of Site-->
-
-    <link rel="icon" href="./assets/favicon_logoa_Kw/favicon-32x32.png" type="image/x-icon">
-
-    <link href="./style/style.css" rel="stylesheet">
-    <link href="./style/output.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <title>Potencial Sem Limites</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="K Projeções & Eventos oferece serviços profissionais de projeção e organização de eventos com inovação e qualidade. Entre em contato!">
+    <meta name="keywords" content="projeções, organização de eventos, eventos corporativos, projeção mapeada, K Projeções">
+    <meta name="author" content="K Projeções & Eventos">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="K Projeções & Eventos">
+    <meta property="og:description" content="Soluções completas para eventos e projeções. Transformamos sua visão em realidade!">
+    <meta property="og:image" content="https://seusite.com/images/og-image.jpg">
+    <meta property="og:url" content="https://seusite.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="K Projeções & Eventos">
+    <meta name="twitter:description" content="Soluções completas para eventos e projeções. Transformamos sua visão em realidade!">
+    <meta name="twitter:image" content="https://seusite.com/images/og-image.jpg">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/aa/5c/8f/aa5c8febcbe314e994669ce86e0d3be7.jpg" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/aa/5c/8f/aa5c8febcbe314e994669ce86e0d3be7.jpg" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://i.pinimg.com/736x/aa/5c/8f/aa5c8febcbe314e994669ce86e0d3be7.jpg">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    
+    <!-- Manifest para PWA -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Tema e Cores -->
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Estilos e Scripts -->
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.min.js" defer></script>
+    
+    <!-- Preloading para performance -->
+    <link rel="preload" href="./src/output.css" as="style">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Enhanced animations with smoother transitions */
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .animate-slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        .animate-pulse-minimal {
+            animation: pulseMinimal 3s ease-in-out infinite;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        
+        @keyframes pulseMinimal {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        /* Refined monochromatic gradients */
+        .gradient-text {
+            background: linear-gradient(135deg, #000000 0%, #404040 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .gradient-bg-subtle {
+            background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+        }
+        
+        .gradient-bg-dark {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+        
+        /* Minimalist card hover effects */
+        .card-minimal {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid transparent;
+        }
+        
+        .card-minimal:hover {
+            transform: translateY(-4px);
+            border-color: #e5e5e5;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* Refined button styles */
+        .btn-minimal {
+            background: #000000;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #000000;
+        }
+        
+        .btn-minimal:hover {
+            background: #1a1a1a;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-outline-minimal {
+            background: transparent;
+            border: 1px solid #000000;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .btn-outline-minimal:hover {
+            background: #000000;
+            color: white;
+            transform: translateY(-1px);
+        }
+        
+        /* Thin line separators */
+        .line-separator {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #e5e5e5 50%, transparent 100%);
+        }
+        
+        /* Enhanced backdrop blur */
+        .backdrop-blur-minimal {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        /* Refined scrollbar */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f5f5f5;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #d1d1d1;
+            border-radius: 2px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a1a1a1;
+        }
+        
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Focus states for accessibility */
+        .focus-minimal:focus {
+            outline: 2px solid #000000;
+            outline-offset: 2px;
+        }
+        
+        /* Minimal loading animation */
+        .loading-dots {
+            display: inline-block;
+        }
+        
+        .loading-dots::after {
+            content: '';
+            animation: dots 1.5s steps(4, end) infinite;
+        }
+        
+        @keyframes dots {
+            0%, 20% { content: ''; }
+            40% { content: '.'; }
+            60% { content: '..'; }
+            80%, 100% { content: '...'; }
+        }
+
+        
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ffffff, #000000);
+            transform-origin: 0%;
+            z-index: 9999;
+        }
+
+
+        #redirect-overlay {
+            background-color: rgba(0, 0, 0, 0.95) !important;
+        }
+
+        /* Personalize o spinner */
+        #redirect-overlay div {
+            border-width: 4px !important;
+            border-top-color: #ffffff !important;
+            width: 60px !important;
+            height: 60px !important;
+        }
+
+        /* Personalize o texto */
+        #redirect-overlay p {
+            font-size: 1.2rem !important;
+            letter-spacing: 2px !important;
+            text-transform: uppercase !important;
+        }
+           
+        .focus-minimal:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-minimal {
+            background-color: #000;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-minimal:hover {
+            background-color: #333;
+        }
+        
+        .btn-minimal:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .animate-spin {
+            animation: spin 1s linear infinite;
+        }
+
+    </style>
 </head>
-<body>
 
-    <!--Seção Hero-->
-    <div class="h-[900px] w-full bg-gradient-to-t from-black to-transparent">
-        <video class="absolute inset-0 w-full h-full object-cover -z-10" autoplay loop muted playsinline>
-            <source src="/assets/vid/3129540-uhd_3840_2160_30fps.mp4" type="video/mp4">
-        </video>
-        <header class="bg-transparent w-full h-auto z-40">
-            <nav class="w-full h-36 md:h-24 flex flex-col md:flex-row justify-around items-center flex-wrap">
-                <div class="flex gap-2 mt-10 md:mt-0">
-                    <h1 class="text-3xl text-zinc-50 font-semibold text-center">Potencial <h1 class="text-3xl text-orange-500 font-semibold " >Sem Limites</h1>
-                </div>
-                <div>
-                    <ul class="hidden md:flex items-center text-2xl text-zinc-50 gap-6">
-                        <li><a class=" transition-all hover:text-orange-500" href="#home">Home</a></li>
-                        <li><a class=" transition-all hover:text-orange-500" href="#about">About</a></li>
-                        <li><a class=" transition-all hover:text-orange-500" href="#method">Method</a></li>
-                        <li><a class=" transition-all hover:text-orange-500" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class=" flex gap-4">
-                    <button id="signIn" class="bg-zinc-50 text-lg text-zinc-950 transition all hover:bg-orange-500  hover:border-2 hover:border-orange-500 hover:shadow-2xl hover:shadow-orange-400 hover:text-amber-50 font-bold py-1 px-14 rounded-s-sm">Entrar</button>
-                    <button id="logOut" class="bg-transparent border-2 border-orange-500 text-lg text-zinc-50 transition all  hover:bg-orange-500 hover:shadow-2xl hover:shadow-orange-400 hover:text-white font-bold py-1 px-14 rounded-s-sm">Mais</button>
-                </div>
+<body class="bg-white text-black min-h-screen antialiased">
+
+    <!-- Mobile Sidebar Overlay -->
+    <div id="sidebarOverlay" class="fixed inset-0 bg-black bg-opacity-30 z-40 hidden lg:hidden backdrop-blur-minimal"></div>
+        
+    <div class="scroll-indicator" id="scrollProgress"></div>
+    
+    
+    <!-- Mobile Sidebar -->
+    <div id="mobileSidebar" class="fixed top-0 left-0 h-full w-80 bg-white border-r border-gray-100 z-50 transform -translate-x-full transition-transform duration-300 lg:hidden">
+        <div class="p-6">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-lg font-medium gradient-text">Menu</h2>
+                <button id="closeSidebar" class="p-2 hover:bg-gray-50 rounded-full transition-colors focus-minimal">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav class="space-y-2">
+                <a href="#home" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors font-light text-3xl focus-minimal">Início</a>
+                <a href="#about" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors font-light text-3xl focus-minimal">Sobre</a>
+                <a href="#posts" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors font-light text-3xl focus-minimal">Posts</a>
+                <a href="#stories" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors font-light text-3xl focus-minimal">Stories</a>
+                <a href="#contact" class="block py-3 px-4 rounded-lg hover:bg-gray-50 transition-colors font-light text-3xl focus-minimal">Contato</a>
             </nav>
-        </header>
-
-        <div data-aos="zoom-in-up" class="flex-col mt-52 w-full h-auto">
-            <div class="flex flex-col items-center justify-center bg-black/50 h-[500px]">
-                <h2 class="text-5xl text-orange-500 font-semibold text-center mb-4 md:text-7xl md:mb-6">O Seu Potencial - Sem Limites</h2>
-                <p class="text-lg text-zinc-50 font-medium text-center mb-4 md:text-3xl md:mb-8">Ajudando homens há reconstruirem a sua autoestima e autoconfiança.</p>
-                <div data-aos="fade-up">
-                    <button id="nextIn" class="bg-orange-500 text-white text-lg font-bold py-2 px-14 rounded-s-sm transition all hover:bg-zinc-50 hover:border-2 hover:border-zinc-50 hover:shadow-2xl hover:shadow-neutral-50 hover:text-neutral-950">Conhecer</button>
-                </div>
+            
+            <div class="mt-8 pt-8">
+                <div class="line-separator mb-8"></div>
+                <button data-redirect="https://www.instagram.com/aprenda_seu_potencial"  class="w-full btn-minimal text-white py-3 px-6 rounded-lg font-light text-sm focus-minimal">
+                    Seguir
+                </button>
             </div>
         </div>
     </div>
-
-    <!--Seção About-->
-    <section class="bg-black w-full h-full px-10 md:px-24">
-        <div id="about" class="flex flex-col justify-around items-center bg-transparent h-full w-full"> 
-            <div class="mb-20">
-                <div data-aos="fade-up">
-                    <h2 class="text-4xl md:text-6xl text-orange-500 font-semibold">Quem Somos Nós?</h2>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row w-full">
-                <div class="w-full h-auto grid grid-cols-1 grid-rows-5 gap-6 md:grid-cols-2 ">
-                    <div data-aos="fade-up-left" class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-4xl text-orange-500 mb-2 ">1 .</h3>
-                        <p class="text-lg md:text-2xl text-zinc-50 font-sans mb-1 md:w-2xl ">Somos uma equipe de psicológos, pesquisadores e empresários com experiência em empreendorismo e desenvolvimento pessoal. Estamos aqui para te ajudar a construir a sua autoestima e autoconfiança.</p>
-                    </div>
-                    <div data-aos="fade-right" class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-3xl text-orange-500 mb-2">2 . </h3>
-                        <p class="text-lg md:text-2xl text-zinc-50 font-sans mb-1">Vamos ser sinceros, por quanto tempo voce irá permanecer sozinho, isolado e magoado pelo o que o mundo te fez?</p>
-                    </div>
-                    <div data-aos="fade-left" class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-3xl text-orange-500 mb-2">3 .</h3>
-                        <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">Dias, semanas, meses?, ou, se for preciso, em 7 dias voce já estará pronto enterrar o homen que voce era e começar a ser o novo homen que vingará a sua dor hoje?</p>
-                    </div>
-                    <div data-aos="zoom-in" class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-3xl text-orange-500 mb-2">4 .</h3>
-                        <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">E então, Está pronto para se tornar um Sem Limites?</p>
-                    </div>                
-                </div>
-
-                <!--<div class="w-full h-auto hidden md:w-full md:h-auto">
-                    <video class=" w-full h-full object-cover -z-10 rounded-xl " autoplay loop muted playsinline>
-                        <source src="/assets/vid/5561389-uhd_3840_2160_25fps.mp4" type="video/mp4">
-                    </video>
-                </div>-->
-
-            </div>
-        </div>
-    </section>
-
-    <!--Seção de Método-->
-    <section class="bg-black w-full h-full px-10 md:px-24">
-        <div id="method" class="flex flex-col justify-around items-center bg-transparent h-full w-full ">
-            <div class="mb-20 mt-20">
-                <div data-aos="fade-up">
-                    <h2 class="text-4xl md:text-6xl text-orange-500 font-semibold">Como Funcionamos?</h2>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row w-full">
-                <div class="w-full h-auto grid grid-cols-1 grid-rows-5 gap-6 md:grid-cols-2 ">
-                    <div data-aos="fade-up-right" class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-4xl text-orange-500 mb-2">1 .</h3>
-                        <p class="text-lg md:text-2xl text-zinc-50 font-sans mb-1">Utilizamos metodologias de Psicologia e Empreendedorismo para identificar as melhores formas de te ajudar a se tornar um Sem Limites.</p>
-                    </div>    
-                    <div data-aos="zoom-in-up" class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-3xl text-orange-500 mb-2">2 . </h3>
-                        <p class="text-lg md:text-2xl text-zinc-50 font-sans mb-1">Nossa equipe de especialistas trabalha com você para descobrir a melhor solução para te ajudar a se tornar um Sem Limites.</p>
-                    </div>
-                    <div data-aos="fade-up" class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-3xl text-orange-500 mb-2">3 .</h3>
-                        <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">Nosso objetivo é te dar a oportunidade de ter a sua autoestima e autoconfiança em primeira mão, sem precisar de investimentos significativos.</p>
-                    </div>
-                    <div data-aos="fade-down-right" class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-3xl text-orange-500 mb-2">4 .</h3>
-                        <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">A nossa equipe de especialistas vai te ajudar a se tornar um Sem Limites, transformando a sua vida em um novo horizonte.</p>
-                    </div>
-                    <div data-aos="fade-up-right" class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-3xl text-orange-500 mb-2">5 .</h3>
-                        <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">Nosso trabalho é feito com base em dados e pesquisas, então você terá uma resposta confiável e objetiva. Além disso, se voce se sentir a mesma pessoa, poderá ter o seu dinheiro reinbolsado.</p>
-                    </div>    
-                </div>
-            </div>
-        </div>
-    </section>
-
     
-    <!--Seção de Diferencial-->
-    <section id="section" class="bg-black w-full h-full px-10 md:px-24">
-        <div id="home" class="flex flex-col justify-around items-center bg-transparent h-full w-full">
-            <div class="mb-20 mt-20">
-                <div data-aos="fade-up">
-                    <h2 class="text-4xl text-center md:text-6xl text-orange-500 font-semibold">Porque Nós Somos Diferentes?</h2>
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white bg-opacity-10 backdrop-blur-minimal z-30 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <button id="menuToggle" class="p-2 rounded-lg hover:bg-gray-50 transition-colors lg:hidden focus-minimal">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                        </svg>
+                    </button>
+                    <h1 class="text-lg font-medium ml-2 lg:ml-0 gradient-text">Potencial Sem Limites</h1>
                 </div>
-            </div>
-            <div class="flex flex-col md:flex-row w-full">
-                <div data-aos="zoom-in" class="w-full h-auto grid grid-cols-1 grid-rows-5 gap-6 md:grid-cols-2 ">
-                    <div data-aos="fade-up-right" class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-4xl text-orange-500 mb-2">1 .</h3>
-                        <p class="text-lg md:text-2xl text-zinc-50 font-sans mb-1">Reininico Emocional Superando Traumas e Relações Tóxicas - essa é a trascrição do nosso método - reforçanado ainda mais o nosso compromisso com voce durante toda a sua caminhada</p>
-                    </div>
-                    <div  data-aos="fade-up-left"class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-3xl text-orange-500 mb-2">2 . </h3>
-                        <p class="text-lg md:text-2xl text-zinc-50 font-sans mb-1">Nossa equipe de psquianalistas irão mapear todas as circustancias que cuminaram para fazer voce se sentir incapaz e sem perspectiva se vitória.</p>
-                    </div>    
-                    <div data-aos="fade-up" class="flex flex-col mb-2 md:mb-10">
-                        <h3 class="text-3xl text-orange-500 mb-2">3 .</h3>
-                        <p class="text-lg  md:text-2xl text-zinc-50 font-sans mb-1">Durante 7 dias, iremos lhe fazer alcancar todos os pilares mentais necessários para se sentir um novo homem, com novas ambições e métricas de vida.</p>
-                    </div>
-                </div>
+                
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="#home" class="font-light text-sm hover:text-gray-600 transition-colors focus-minimal">Início</a>
+                    <a href="#about" class="font-light text-sm hover:text-gray-600 transition-colors focus-minimal">Sobre</a>
+                    <a href="#posts" class="font-light text-sm hover:text-gray-600 transition-colors focus-minimal">Posts</a>
+                    <a href="#stories" class="font-light text-sm hover:text-gray-600 transition-colors focus-minimal">Stories</a>
+                    <a href="#contact" class="font-light text-sm hover:text-gray-600 transition-colors focus-minimal">Contato</a>
+                </nav>
+                
+                <button data-redirect="https://www.instagram.com/aprenda_seu_potencial"  class="hidden lg:block btn-minimal text-white py-2 px-6 rounded-lg font-light text-sm focus-minimal">
+                    Seguir
+                </button>
             </div>
         </div>
-    </section>
-  
-    <section class=" w-full h-full">
-        <div class="w-full h-auto md:w-full md:h-auto">
-            <video class=" w-full p-8 h-full object-cover rounded-xl " autoplay loop muted playsinline>
-                <source src="./assets/vid/0203/Potencial Sem Limites/Potencial Sem Limites.mp4" type="video/mp4">
-            </video>
-        </div>
-    </section>
+    </header>
     
-    <!--Seção de Contato-->
-    <section class="bg-black w-full h-full px-10 md:px-24">
-        <div id="contact" class="flex flex-col justify-around items-center bg-transparent h-full w-full px-4 py-12">
-            <div class="mb-20 mt-20">
-                <div data-aos="fade-up">
-                    <h2 class="text-4xl md:text-6xl text-orange-500 font-semibold">Contato</h2>
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center justify-center gradient-bg-subtle relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-black to-transparent opacity-[0.02]"></div>
+            
+            <div class="text-center z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="animate-fade-in">
+                    <div class="w-24 h-24 bg-black rounded-full mx-auto mb-12 flex items-center justify-center animate-pulse-minimal">
+                        <span class="text-white font-light text-4xl">U</span>
+                    </div>
+                    
+                    <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extralight mb-8 gradient-text leading-tight">
+                        Potencial Sem Limites
+                    </h2>
+                    
+                    <p class="text-lg lg:text-xl text-gray-500 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+                        Transformando sonhos em realidade através do desenvolvimento pessoal e profissional
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button data-scroll="#contact" class="btn-minimal text-white py-4 px-8 rounded-lg font-light text-sm focus-minimal">
+                            Descobrir Mais
+                        </button>
+                        <button data-scroll="#posts" class="btn-outline-minimal py-4 px-8 rounded-lg font-light text-sm focus-minimal">
+                            Ver Posts
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div data-aos="fade-up" class="flex flex-col md:flex-col w-full">
-                <div class="w-full h-auto flex flex-col md:flex-row md:justify-around gap-4">
-                    <div class="w-full grid grid-cols-1 grid-rows-4 md:grid-cols-2">
-                        <div data-aos="fade-up-right" class="flex flex-col mb-2 md:mb-10">
-                            <h3 class="text-4xl text-orange-500 mb-2">1 .</h3>
-                            <p class="text-lg md:text-xl text-zinc-50 font-sans mb-1">Entre em contato conosco através do formulário abaixo:</p>
-                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em por WhatsApp, Instragam, Facebook e Telegram.</p>
-                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos parceiros por meio do forumlário.</p>
+            
+            <!-- Minimalist floating elements -->
+            <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-black rounded-full animate-float opacity-20"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-3 h-3 bg-gray-400 rounded-full animate-float opacity-30" style="animation-delay: 1s;"></div>
+            <div class="absolute top-1/3 right-1/3 w-1 h-1 bg-black rounded-full animate-float opacity-40" style="animation-delay: 2s;"></div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20">
+                    <h2 class="text-3xl lg:text-4xl font-extralight mb-6 gradient-text">Sobre Nós</h2>
+                    <div class="line-separator w-16 mx-auto mb-8"></div>
+                    <p class="text-lg text-gray-500 max-w-3xl mx-auto font-light leading-relaxed">
+                        Uma comunidade dedicada ao crescimento pessoal e profissional, onde cada pessoa descobre seu verdadeiro potencial
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <div class="card-minimal bg-white p-8 rounded-2xl text-center">
+                        <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path>
+                            </svg>
                         </div>
-                        <div  data-aos="fade-up-left" class="flex flex-col mb-2 md:mb-10">
-                            <h3 class="text-3xl text-orange-500 mb-2">2 . </h3>
-                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo telefone: (91) 99396-1874</p>
-                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo e-mail:  <a href="mailto:pot3ncialsemlimites@gmail.com" class="text-orange-500 hover:text-orange-800">pot3ncialsemlimites@gmail.com</a></p>
-                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo WhatsApp: (91) 993936-1874</p>
+                        <h3 class="text-xl font-light mb-4">Motivação</h3>
+                        <p class="text-gray-500 font-light leading-relaxed">Inspiração diária para superar desafios e alcançar seus objetivos mais ambiciosos.</p>
+                    </div>
+                    
+                    <div class="card-minimal bg-white p-8 rounded-2xl text-center">
+                        <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
                         </div>
-                        <div  data-aos="fade-up-left" class="flex flex-col mb-2 md:mb-10">
-                            <h3 class="text-3xl text-orange-500 mb-2">3 .</h3>
-                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo Facebook: <a href="https://www.facebook.com/examplecompany" class="text-orange-500 hover:text-orange-800">Facebook</a></p>
-                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo Telegram: <a href="https://www.instagram.com/examplecompany" class="text-orange-500 hover:text-orange-800">Instagram</a></p>
-                            <p class="text-lg  md:text-xl text-zinc-50 font-sans mb-2">Entre em contato com nossos representantes pelo Instagram: <a href="https://www.instagram.com/examplecompany" class="text-orange-500 hover:text-orange-800">Instagram</a></p>
+                        <h3 class="text-xl font-light mb-4">Crescimento</h3>
+                        <p class="text-gray-500 font-light leading-relaxed">Estratégias comprovadas para desenvolvimento pessoal e profissional sustentável.</p>
+                    </div>
+                    
+                    <div class="card-minimal bg-white p-8 rounded-2xl text-center">
+                        <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-light mb-4">Comunidade</h3>
+                        <p class="text-gray-500 font-light leading-relaxed">Uma rede de apoio com pessoas que compartilham os mesmos valores e objetivos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Posts Section -->
+        <section id="posts" class="py-24 gradient-bg-subtle">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20">
+                    <h2 class="text-3xl lg:text-4xl font-extralight mb-6 gradient-text">Posts Recentes</h2>
+                    <div class="line-separator w-16 mx-auto mb-8"></div>
+                    <p class="text-lg text-gray-500 font-light">Conteúdo inspirador para sua jornada de crescimento</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Post 1 -->
+                    <div class="card-minimal bg-white rounded-2xl overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-black to-gray-600"></div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-light mb-3">5 Passos para Descobrir Seu Propósito</h3>
+                            <p class="text-gray-500 mb-4 font-light text-sm leading-relaxed">Como identificar aquilo que realmente importa para você e direcionar sua energia...</p>
+                            <div class="flex items-center text-xs text-gray-400 font-light">
+                                <span>há 2 dias</span>
+                                <span class="mx-2">•</span>
+                                <span>1.2k curtidas</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-full">
-                        <form class="w-full h-auto md:h-[500px] flex flex-col bg-neutral-950/65 justify-center p-8  rounded-xl" action="/submit" method="post">
-                            <div data-aos="zoom-in" class="relative mb-10">
-                              <input type="text" name="name" id="name" placeholder=" " class="peer block w-full text-orange-500 appearance-none bg-transparent border border-gray-300 rounded-md px-3 pt-6 pb-2 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 sm:text-sm" required>
-                              <label for="name" class="absolute left-3 top-2 text-orange-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-sm peer-focus:text-orange-500">Nome</label>
+                    
+                    <!-- Post 2 -->
+                    <div class="card-minimal bg-white rounded-2xl overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-gray-600 to-black"></div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-light mb-3">Mindset de Crescimento vs Mindset Fixo</h3>
+                            <p class="text-gray-500 mb-4 font-light text-sm leading-relaxed">Entenda como sua mentalidade pode ser o diferencial entre o sucesso e a estagnação...</p>
+                            <div class="flex items-center text-xs text-gray-400 font-light">
+                                <span>há 5 dias</span>
+                                <span class="mx-2">•</span>
+                                <span>2.1k curtidas</span>
                             </div>
-                          
-                            <div data-aos="zoom-in-up" class="relative mb-10">
-                              <input type="email" name="email" id="email" placeholder=" " class="peer block w-full  text-orange-500  appearance-none bg-transparent border border-gray-300 rounded-md px-3 pt-8 pb-2 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 sm:text-sm" required>
-                              <label for="email" class="absolute left-3 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-sm peer-focus:text-orange-500">Email</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 3 -->
+                    <div class="card-minimal bg-white rounded-2xl overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-black to-gray-400"></div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-light mb-3">Rotina Matinal de Alta Performance</h3>
+                            <p class="text-gray-500 mb-4 font-light text-sm leading-relaxed">Descubra como começar o dia com energia e foco para maximizar sua produtividade...</p>
+                            <div class="flex items-center text-xs text-gray-400 font-light">
+                                <span>há 1 semana</span>
+                                <span class="mx-2">•</span>
+                                <span>3.5k curtidas</span>
                             </div>
-                          
-                            <div data-aos="zoom-in-up" class="relative mb-10">
-                              <textarea name="message" id="message" placeholder=" " class="peer block w-full  text-orange-500  appearance-none bg-transparent border border-gray-300 rounded-md px-3 pt-8 pb-2 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500 sm:text-sm" required></textarea>
-                              <label for="message" class="absolute left-3 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-sm peer-focus:text-orange-500">Mensagem</label>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 4 -->
+                    <div class="card-minimal bg-white rounded-2xl overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-gray-500 to-black"></div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-light mb-3">Superando o Medo do Fracasso</h3>
+                            <p class="text-gray-500 mb-4 font-light text-sm leading-relaxed">Transforme o medo em combustível para o crescimento e aprenda com cada desafio...</p>
+                            <div class="flex items-center text-xs text-gray-400 font-light">
+                                <span>há 1 semana</span>
+                                <span class="mx-2">•</span>
+                                <span>1.8k curtidas</span>
                             </div>
-                            <div data-aos="fade-up" class="flex justify-center items-center w-full h-auto">
-                                <button type="submit" class="px-10 py-2 rounded-sm text-xl text-white bg-transparent border-2 border-orange-500 transition-all hover:bg-orange-500">Enviar</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 5 -->
+                    <div class="card-minimal bg-white rounded-2xl overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-black to-gray-300"></div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-light mb-3">Construindo Hábitos Duradouros</h3>
+                            <p class="text-gray-500 mb-4 font-light text-sm leading-relaxed">Estratégias científicas para criar hábitos que realmente se mantêm ao longo do tempo...</p>
+                            <div class="flex items-center text-xs text-gray-400 font-light">
+                                <span>há 2 semanas</span>
+                                <span class="mx-2">•</span>
+                                <span>4.2k curtidas</span>
                             </div>
-                        </form>     
+                        </div>
+                    </div>
+                    
+                    <!-- Post 6 -->
+                    <div class="card-minimal bg-white rounded-2xl overflow-hidden">
+                        <div class="h-48 bg-gradient-to-br from-gray-400 to-black"></div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-light mb-3">Inteligência Emocional no Trabalho</h3>
+                            <p class="text-gray-500 mb-4 font-light text-sm leading-relaxed">Como desenvolver suas habilidades emocionais para ter melhores relacionamentos...</p>
+                            <div class="flex items-center text-xs text-gray-400 font-light">
+                                <span>há 2 semanas</span>
+                                <span class="mx-2">•</span>
+                                <span>2.7k curtidas</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!--Rodapé-->
-    <footer data-aos="zoom-in" class="bg-zinc-950 w-full h-52">
-        <div class="flex justify-around text-center items-center px-4 h-full">
-            <div data-aos="fade-up">
-                <p class="text-orange-500 text-4xl mb-4">Izileth Services</p>
-                <p class="text-white text-xl mb-2">Potencial Sem Limites | 2024 - 2025</p>
-                <p class="text-white text-lg">Todos os direitos reservados &copy; 2025</p>
+        </section>
+        
+        <!-- Stories Section -->
+        <section id="stories" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20">
+                    <h2 class="text-3xl lg:text-4xl font-extralight mb-6 gradient-text">Stories em Destaque</h2>
+                    <div class="line-separator w-16 mx-auto mb-8"></div>
+                    <p class="text-lg text-gray-500 font-light">Momentos inspiradores da nossa jornada</p>
+                </div>
+                
+                <div class="flex justify-center">
+                    <div class="flex overflow-x-auto space-x-6 pb-4 max-w-full">
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-black to-gray-600 rounded-full p-0.5">
+                            <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                                <span class="text-xs font-light text-center leading-tight">Dicas<br>Diárias</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-gray-600 to-black rounded-full p-0.5">
+                            <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                                <span class="text-xs font-light text-center leading-tight">Metas<br>2025</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-black to-gray-400 rounded-full p-0.5">
+                            <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                                <span class="text-xs font-light text-center leading-tight">Livros<br>Recomendados</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-gray-500 to-black rounded-full p-0.5">
+                            <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                                <span class="text-xs font-light text-center leading-tight">Rotina<br>Matinal</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-black to-gray-300 rounded-full p-0.5">
+                            <div class="w-full h-full bg-white rounded-full flex items-center justify-center">
+                                <span class="text-xs font-light text-center leading-tight">Exercícios<br>Mentais</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
-
-    <!--<div data-aos="fade-up"></div>
-    <div data-aos="fade-right"></div>
-    <div data-aos="fade-left"></div>
-    <div data-aos="fade-up-right"></div>
-    <div data-aos="fade-down-right"></div>
+        </section>
+        
+        <!-- Stats Section -->
+        <section class="py-24 gradient-bg-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                    <div class="animate-fade-in">
+                        <div class="text-4xl font-extralight mb-2">50k+</div>
+                        <p class="text-gray-300 font-light text-sm">Seguidores</p>
+                    </div>
+                    <div class="animate-fade-in" style="animation-delay: 0.2s;">
+                        <div class="text-4xl font-extralight mb-2">1M+</div>
+                        <p class="text-gray-300 font-light text-sm">Visualizações</p>
+                    </div>
+                    <div class="animate-fade-in" style="animation-delay: 0.4s;">
+                        <div class="text-4xl font-extralight mb-2">2k+</div>
+                        <p class="text-gray-300 font-light text-sm">Vidas Transformadas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 gradient-bg-subtle">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20">
+                    <h2 class="text-3xl lg:text-4xl font-extralight mb-6 gradient-text">Entre em Contato</h2>
+                    <div class="line-separator w-16 mx-auto mb-8"></div>
+                    <p class="text-lg text-gray-500 font-light">Vamos juntos desbloquear seu potencial sem limites</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-sm p-8 border border-gray-100">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-light text-gray-700 mb-2">Nome</label>
+                                <input type="text" name="nome" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-1 focus:ring-black focus:border-black transition-colors font-light focus-minimal">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-light text-gray-700 mb-2">Email</label>
+                                <input type="email" name="email" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-1 focus:ring-black focus:border-black transition-colors font-light focus-minimal">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-light text-gray-700 mb-2">Assunto</label>
+                            <input type="text" name="assunto" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-1 focus:ring-black focus:border-black transition-colors font-light focus-minimal">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-light text-gray-700 mb-2">Mensagem</label>
+                            <textarea rows="5" name="mensagem" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-1 focus:ring-black focus:border-black transition-colors font-light resize-none focus-minimal"></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn-minimal text-white py-4 px-8 rounded-lg font-light text-sm focus-minimal">
+                                Enviar Mensagem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
     
-    <div data-aos="zoom-in"></div>
-    <div data-aos="zoom-in-up"></div>-->
-
-    <!--Scripts-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
-    <script src="script.js"></script>
-    <script src="/backend/formProcess.js"></script>
+    <!-- Footer -->
+    <footer class="gradient-bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-xl font-light mb-4">Potencial Sem Limites</h3>
+                <p class="text-gray-400 mb-8 font-light text-sm">Transformando sonhos em realidade</p>
+                
+                <div class="flex justify-center space-x-6 mb-12">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors focus-minimal">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors focus-minimal">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.303.076.475-.075.565-.235.098-.634.34-1.016.311-.315-.025-.603-.184-.836-.457-.577-.69-.937-1.577-.937-2.531 0-3.256 2.335-6.24 6.732-6.24 3.538 0 6.286 2.52 6.286 5.886 0 3.527-2.222 6.368-5.309 6.368-1.036 0-2.011-.538-2.344-1.178l-.637 2.422c-.226.869-.835 1.957-1.244 2.621.937.29 1.931.446 2.962.446 6.607 0 11.985-5.365 11.985-11.981C23.97 5.39 18.592.026 11.985.026L12.017 0z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors focus-minimal">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors focus-minimal">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left mb-12">
+                    <div>
+                        <h4 class="text-sm font-light mb-4 text-gray-300">Links Rápidos</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-white transition-colors text-sm font-light focus-minimal">Início</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-white transition-colors text-sm font-light focus-minimal">Sobre</a></li>
+                            <li><a href="#posts" class="text-gray-400 hover:text-white transition-colors text-sm font-light focus-minimal">Posts</a></li>
+                            <li><a href="#stories" class="text-gray-400 hover:text-white transition-colors text-sm font-light focus-minimal">Stories</a></li>
+                            <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors text-sm font-light focus-minimal">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-sm font-light mb-4 text-gray-300">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm font-light focus-minimal">Termos de Serviço</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm font-light focus-minimal">Política de Privacidade</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm font-light focus-minimal">Cookies</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-sm font-light mb-4 text-gray-300">Contato</h4>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400 text-sm font-light">contato@potencialsemlimites.com</li>
+                            <li class="text-gray-400 text-sm font-light">+55 11 98765-4321</li>
+                            <li class="text-gray-400 text-sm font-light">São Paulo, Brasil</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pt-8">
+                    <div class="line-separator mb-8"></div>
+                    <p class="text-gray-400 text-xs font-light">&copy; 2025 Potencial Sem Limites. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center opacity-0 invisible transition-all duration-300 shadow-lg hover:bg-gray-800 focus-minimal">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"></path>
+        </svg>
+    </button>
+    
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileSidebar = document.getElementById('mobileSidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        const closeSidebar = document.getElementById('closeSidebar');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileSidebar.classList.remove('-translate-x-full');
+            sidebarOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeSidebar.addEventListener('click', () => {
+            mobileSidebar.classList.add('-translate-x-full');
+            sidebarOverlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        });
+        
+        sidebarOverlay.addEventListener('click', () => {
+            mobileSidebar.classList.add('-translate-x-full');
+            sidebarOverlay.classList.add('hidden');
+            document.body.style.overflow = '';
+        });
+        
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                backToTop.classList.remove('opacity-100', 'visible');
+                backToTop.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    const headerHeight = 80;
+                    const targetPosition = targetElement.offsetTop - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileSidebar.classList.add('-translate-x-full');
+                    sidebarOverlay.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+            });
+        });
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.card-minimal, .animate-slide-up').forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Enhanced form validation
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simple form validation
+                const inputs = form.querySelectorAll('input[required], textarea[required]');
+                let isValid = true;
+                
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        input.classList.add('border-red-300');
+                        isValid = false;
+                    } else {
+                        input.classList.remove('border-red-300');
+                    }
+                });
+                
+                if (isValid) {
+                    // Simulate form submission
+                    const submitBtn = form.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.textContent;
+                    
+                    submitBtn.textContent = 'Enviando...';
+                    submitBtn.disabled = true;
+                    
+                    setTimeout(() => {
+                        submitBtn.textContent = 'Enviado!';
+                        setTimeout(() => {
+                            submitBtn.textContent = originalText;
+                            submitBtn.disabled = false;
+                            form.reset();
+                        }, 2000);
+                    }, 1500);
+                }
+            });
+        }
+        
+        // Keyboard navigation improvements
+        document.addEventListener('keydown', function(e) {
+            // ESC key closes mobile menu
+            if (e.key === 'Escape') {
+                mobileSidebar.classList.add('-translate-x-full');
+                sidebarOverlay.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Performance optimization: Lazy load images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.classList.remove('opacity-0');
+                            img.classList.add('opacity-100');
+                            observer.unobserve(img);
+                        }
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+        
+        // Initialize on load
+        window.addEventListener('load', () => {
+            // Remove any loading states
+            document.body.classList.add('loaded');
+            
+            // Initialize any additional features
+            console.log('Potencial Sem Limites - Enhanced version loaded successfully');
+        });
+    </script>
+    <script src="/script.js"></script>
+    <script src="/scroll.js"></script>
+    <script src="/redirect.js"></script>
+    <script src="/send.js"></script>
 </body>
 </html>
